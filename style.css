@@ -1,0 +1,22 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+
+.grid-container {
+    width: 500px;
+    height: 500px;
+    border: 1px solid red;
+    display: grid;
+    grid-template: repeat(8, 1fr)/repeat(8, 1fr);
+}
+
