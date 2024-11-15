@@ -5,13 +5,19 @@
 }
 
 body {
-  display: flex;
+  display: grid;
   width: 100vw;
   height: 100vh;
   align-items: center;
   justify-content: center;
+  background-color: #fdfaf5;
 }
 
+h1 {
+  text-align: center;
+  font-size: min(4vw, 4vh);
+  margin: 3vmin;
+}
 .grid-container {
   width: min(64vw, 64vh);
   height: min(64vw, 64vh);
