@@ -4,6 +4,13 @@
   box-sizing: border-box;
 }
 
+:root {
+  --gold: #eadca6;
+  --white: #f4f4f4;
+  --bronze: #e2c275;
+  --brown: #5a3f11;
+}
+
 body {
   display: grid;
   width: 100vw;
@@ -23,8 +30,8 @@ h1 {
   height: min(64vw, 64vh);
   display: grid;
   grid-template: repeat(8, 1fr) / repeat(8, 1fr);
-  border: 1vmin solid #e2c275;
-  box-shadow: 1vmin 1vmin 1vmin #5a3f11;
+  border: 1vmin solid var(--bronze);
+  box-shadow: 1vmin 1vmin 1vmin var(--brown);
 }
 
 .grid-item {
@@ -34,9 +41,9 @@ h1 {
 }
 
 .a {
-  background-color: #eadca6;
+  background-color: var(--gold);
 }
 
 .b {
-  background-color: #f4f4f4;
+  background-color: var(--white);
 }
